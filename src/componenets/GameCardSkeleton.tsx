@@ -2,7 +2,7 @@ import { Card, CardBody, Skeleton, SkeletonText } from "@chakra-ui/react";
 
 const GameCardSkeleton = () => {
   return (
-    <Card minW="300px">
+    <Card>
       <Skeleton height="200px" />
       <CardBody>
         <SkeletonText />
