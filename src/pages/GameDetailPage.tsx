@@ -5,6 +5,7 @@ import ExpandableText from "../componenets/ExpandableText";
 import DefinitionItem from "../componenets/DefinitionItem";
 import CriticScore from "../componenets/CriticScore";
 import GameAttributes from "../componenets/GameAttributes";
+import GameTrailer from "../componenets/GameTrailer";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -19,6 +20,7 @@ const GameDetailPage = () => {
       <Heading>{game.name}</Heading>
       <ExpandableText>{game.description_raw}</ExpandableText>
       <GameAttributes game={game} />
+      <GameTrailer gameId={game.id} />
     </>
   );
 };
